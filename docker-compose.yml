@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     container_name: freqtrade2
     volumes:
-      - "./freqtrade-docker-strategy/user_data:/user_data"
+      - "./user_data:/freqtrade-docker-strategy/user_data"
     # Expose api on port 8080 (localhost only)
     # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
     # before enabling this.
