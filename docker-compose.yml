@@ -18,11 +18,11 @@ services:
     # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
     # before enabling this.
     ports:
-      - "0.0.0.0"
+      - "0.0.0.0:80:80"
     # Default command used when running `docker compose up`
     command: >
       trade
       --logfile user_data/logs/freqtrade.log
       --db-url sqlite:////user_data/tradesv2.sqlite
-      --config user_data/config.json
+      --config /user_data/config.json
       --strategy Saturn5
